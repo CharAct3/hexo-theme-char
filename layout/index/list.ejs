@@ -1,0 +1,10 @@
+<a href="<%= config.root %><%- post.path %>" class="post-list-item">
+    <%- post.title %>
+    <p class="small-text">
+        <%= post.date.format(config.date_format) %>
+        <!-- Display tags -->
+        <% post.tags.forEach(function (tag) { %>
+            <span class="tag"><%= tag.name %></span>
+        <% }); %>
+    </p>
+</a>

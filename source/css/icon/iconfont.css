@@ -1,0 +1,42 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.ttf?t=1582971517583') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  font-size: 2rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e6fc";
+}
+
+.icon-github:before {
+  content: "\e718";
+}
+
+.icon-weibo:before {
+  content: "\e611";
+}
+
+.icon-zhihu:before {
+  content: "\e765";
+}
+
+.icon-facebook:before {
+  content: "\e7ff";
+}
+
+.icon-telegram:before {
+  content: "\e9ac";
+}
+
+.icon-twitter:before {
+  content: "\e62d";
+}
+

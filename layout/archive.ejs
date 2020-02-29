@@ -1,0 +1,11 @@
+<section class="container">
+    <% site.posts.sort('data').reverse().forEach(function (post, index) { %>
+        <% if (index === 0) {%>
+            <h2><%= post.date.year() %></h2>
+        <% } %>
+            <a class="post-list-item" href="<%- config.root %><%- post.path %>">
+                <span class="tag"><%= post.date.format('MMM DD') %></span>
+                <%= post.title %>
+            </a>
+    <% }) %>
+</section>

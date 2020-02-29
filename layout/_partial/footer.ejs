@@ -1,0 +1,13 @@
+<footer class="footer">
+    <% if (config.social) { %>
+        <p>
+            <% Object.entries(config.social).forEach(function ([key, value]) { %>
+                <a class="iconfont icon-<%= key %>" href="<%= value %>"></a>
+            <% }) %>
+        </p>
+    <% } %>
+    <p>Copyright © <%= config.author %> <%= new Date().getFullYear() %>.
+<!--    Powered by <a href="https://hexo.io">Hexo</a>.-->
+<!--        Theme <a href="https://github.com/charact3/hexo-theme-char">Char</a>.-->
+    </p>
+</footer>

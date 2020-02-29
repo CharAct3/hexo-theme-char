@@ -1,0 +1,8 @@
+menu:
+  Home: /home
+  Archives: /archives
+
+favicon: /image/favicon.png
+
+palette:
+  highlight: "#7422a9"

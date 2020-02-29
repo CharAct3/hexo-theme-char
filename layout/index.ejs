@@ -1,0 +1,8 @@
+<section class="index container">
+    <div class="post-list">
+<% page.posts.forEach(function(post){ %>
+    <%- partial('index/list.ejs', {post: post}) %>
+<% }); %>
+    </div>
+    <%- partial('index/pagination') %>
+</section>

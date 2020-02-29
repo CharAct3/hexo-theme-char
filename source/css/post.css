@@ -1,0 +1,162 @@
+/* post */
+.post {
+    color: #3e3e3e;
+    line-height: 1.7;
+    padding-bottom: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.post h1 {
+    font-size: 2rem;
+}
+
+.post h2 {
+    font-size: 1.5rem;
+}
+
+.post h3 {
+    font-size: 1.25rem;
+}
+
+.post h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.post h2, h3, h4 {
+    margin-top: 25px;
+}
+
+.post p {
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.post code {
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.85rem;
+    background-color: #f6f6f6;
+    color: #777;
+}
+
+.post blockquote {
+    margin: 0.6rem 0.5rem;
+}
+
+.post blockquote p {
+    font-size: 0.95rem;
+    color: #888;
+    border-left: 0.1rem solid #ddd;
+    padding: 0.3rem 0.5rem 0.3rem 1rem;
+}
+
+.post figure {
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #f6f6f6;
+    overflow: auto;
+}
+
+.post figure td.gutter {
+    color: var(--highlight-color);
+    opacity: 0.5;
+    padding-right: 0.5rem;
+    user-select: none;
+    text-align: right;
+}
+
+.post figure pre {
+    max-width: 100%;
+    font-size: 0.8rem;
+    font-family: var(--mono-font);
+}
+
+#post-title {
+    margin-bottom: 1.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.tag {
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    font-family: var(--mono-font);
+    background-color: #f6f6f6;
+    opacity: 0.9;
+    color: var(--highlight-color);
+}
+
+/* Syntax highlighting copied from hexo.io */
+pre .comment {
+    color: #7b6890;
+    opacity: 0.8;
+}
+
+pre .attribute,
+pre .css .class,
+pre .css .id,
+pre .css .pseudo,
+pre .html .doctype,
+pre .regexp,
+pre .ruby .constant,
+pre .tag,
+pre .variable,
+pre .xml .doctype,
+pre .xml .pi,
+pre .xml .tag .title {
+    color: #c82829
+}
+
+pre .number {
+    color: #8959a8;
+}
+
+pre .constant,
+pre .literal,
+pre .preprocessor {
+    color: #f5871f
+}
+
+pre .class,
+pre .css .rules .attribute,
+pre .ruby .class .title {
+    color: #718c00
+}
+
+pre .header,
+pre .inheritance,
+pre .ruby .symbol,
+pre .string,
+pre .value {
+    color: #607a00
+}
+
+pre .css .hexcolor {
+    color: #3e999f
+}
+
+pre .coffeescript .title,
+pre .function,
+pre .built_in,
+pre .decorator,
+pre .javascript .title,
+pre .perl .sub,
+pre .title,
+pre .params,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword {
+    color: #4271ae
+}
+
+pre .keyword {
+    color: var(--highlight-color);
+}

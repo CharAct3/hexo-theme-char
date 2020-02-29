@@ -1,0 +1,8 @@
+<nav class="pagination">
+        <a class="pagination-button
+    <% if (!page.prev){ %> inactive <% } %>"
+           href="<%- config.root %><%- page.prev_link %>">← Prev</a>
+        <a class="pagination-button
+    <% if (!page.next){ %> inactive <% } %>"
+           href="<%- config.root %><%- page.next_link %>">Next →</a>
+</nav>
