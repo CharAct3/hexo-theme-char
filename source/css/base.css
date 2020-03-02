@@ -2,13 +2,26 @@
     /*--highlight-color: #A94442;*/
     --link-color: #7422a9;
     --highlight-color: #7422a9;
-    --normal-font:  -apple-system, WenQuanYi Micro Hei, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    --normal-font:  -apple-system, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
     --mono-font: Menlo,Monaco,Consolas,"Courier New",monospace;
     font-family: var(--normal-font);
 }
 
-.content {
-    min-height: calc(75vh);
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 a, a:hover {
@@ -40,7 +53,7 @@ a, a:hover {
 }
 
 .navbar-left {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -74,7 +87,7 @@ a, a:hover {
     margin: auto;
     width: 72vw;
     max-width: 768px;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 /* footer */
@@ -82,5 +95,5 @@ a, a:hover {
     font-size: 0.9rem;
     color: #727272;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }

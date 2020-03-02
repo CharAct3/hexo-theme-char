@@ -2,8 +2,6 @@
 .post {
     color: #3e3e3e;
     line-height: 1.7;
-    padding-bottom: 3rem;
-    margin-bottom: 1.8rem;
 }
 
 .post h1 {
@@ -83,7 +81,7 @@ img {
     width: 100%;
 }
 
-.tag {
+.post-tag {
     border-radius: 0.2rem;
     padding: 0.3rem 0.5rem;
     margin-right: 0.5rem;
