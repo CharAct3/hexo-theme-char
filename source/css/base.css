@@ -2,7 +2,7 @@
     /*--highlight-color: #A94442;*/
     --link-color: #7422a9;
     --highlight-color: #7422a9;
-    --normal-font:  -apple-system, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    --normal-font: "Helvetica Neue",Roboto,Tahoma,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     --mono-font: Menlo,Monaco,Consolas,"Courier New",monospace;
     font-family: var(--normal-font);
 }
@@ -44,7 +44,7 @@ a, a:hover {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-.navbar-content {
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,12 +57,19 @@ a, a:hover {
     font-weight: 700;
 }
 
+.navbar-left small {
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
 .navbar-right {
     font-size: 1.1rem;
     font-weight: 500;
 }
 @media (max-width: 768px) {
-    .navbar-content {
+    .navbar-container {
         width: 90vw;
         flex-wrap: wrap;
     }
@@ -97,3 +104,70 @@ a, a:hover {
     text-align: center;
     margin-top: 2.5rem;
 }
+
+/* index page */
+.index {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-list {
+    width: 80%;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .post-list {
+        width: 100%;
+    }
+}
+
+.post-list-item {
+    display: block;
+    color: #3e3e3e;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.post-list-item:hover {
+    background-color: #f5f5f5;
+    color: var(--link-color);
+}
+
+.small-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #727272;
+    margin: 0;
+}
+
+/* pagination */
+.pagination {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2.5rem auto 0 auto;
+}
+@media (max-width: 512px) {
+    .pagination {
+        width: 80%;
+    }
+}
+
+.pagination-button {
+    display: block;
+}
+
+.inactive {
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+}
+

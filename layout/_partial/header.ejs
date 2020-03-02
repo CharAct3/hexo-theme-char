@@ -1,10 +1,11 @@
 <nav class="navbar">
 
-    <div class="navbar-content">
+    <div class="navbar-container">
         <div class="navbar-left">
             <a href="<%= url_for(config.home_dir || '/') %>">
                 <%= config.title %>
             </a>
+            <small><%= config.subtitle %></small>
         </div>
         <div class="navbar-right">
             <% for (var i in theme.menu){ %>

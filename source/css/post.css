@@ -92,6 +92,18 @@ img {
     color: var(--highlight-color);
 }
 
+.post>table {
+    border-collapse: collapse;
+}
+
+.post>table, th, td {
+    border: 1px solid var(--highlight-color);
+}
+
+figure table, figure th, figure td {
+    border: none;
+}
+
 /* Syntax highlighting copied from hexo.io */
 pre .comment {
     color: #7b6890;
