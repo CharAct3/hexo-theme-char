@@ -1,8 +1,16 @@
-<% post.tags.forEach(function (tag) { %>
-    <a class="post-tag" href="<%= config.root %><%= tag.path %>"><%= tag.name %></a>
-<% })%>
-
 <div class="post">
-    <h1><%- post.title || post.link %></h1>
+    <h1>
+        <%- post.title || post.link %>
+        <p class="small-text subtitle">
+            <span>
+                ⏱<%= post.date.format(config.date_format) %>
+            </span>
+            <span style="padding-left: 1rem">
+                🔖<% post.tags.forEach(function (tag) { %>
+                    <a class="post-tag" href="<%= config.root %><%= tag.path %>"><%= tag.name %></a>
+                <% })%>
+            </span>
+        </p>
+    </h1>
     <%- post.content %>
 </div>
