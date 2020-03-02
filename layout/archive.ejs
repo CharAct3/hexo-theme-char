@@ -3,7 +3,7 @@
     <% site.posts.sort('date').reverse().forEach(function (post) { %>
         <% if (year !== post.date.year()) {%>
             <% year = post.date.year() %>
-            <h2><%= post.date.year() %></h2>
+            <h2 class="nav-right"><%= post.date.year() %></h2>
         <% } %>
             <a class="post-list-item" href="<%- config.root %><%- post.path %>">
                 <span class="post-tag"><%= post.date.format('MMM DD') %></span>

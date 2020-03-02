@@ -1,32 +1,36 @@
 /* post */
 .post {
-    color: #3e3e3e;
+    color: var(--first-color);
     line-height: 1.7;
+    font-weight: 400;
 }
 
 .post h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .post h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .post h3 {
     font-size: 1.25rem;
 }
 
+.post h4 {
+    font-size: 1.1rem;
+}
+
 .post h1, h2, h3, h4 {
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
 }
 
 .post h2, h3, h4 {
-    margin-top: 25px;
+    margin-top: 1rem;
 }
 
 .post p {
-    font-weight: 400;
     margin-bottom: 0.6rem;
     font-size: 1rem;
 }
@@ -73,23 +77,19 @@
     font-family: var(--mono-font);
 }
 
-#post-title {
-    margin-bottom: 1.2rem;
-}
-
 img {
     width: 100%;
 }
 
 .post-tag {
-    border-radius: 0.2rem;
-    padding: 0.3rem 0.5rem;
     margin-right: 0.5rem;
-    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
     font-family: var(--mono-font);
+    border-radius: 0.2rem;
     background-color: #f6f6f6;
-    opacity: 0.9;
     color: var(--highlight-color);
+    opacity: 0.9;
 }
 
 .post>table {
