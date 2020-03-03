@@ -42,6 +42,10 @@
         </script>
     <% } %>
 
+    <% if (theme.busuanzi) { %>
+        <script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <% } %>
+
     <style>
         :root {
             --highlight-color: <%= theme.palette.highlight %>;
