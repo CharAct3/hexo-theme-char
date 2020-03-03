@@ -154,7 +154,7 @@ a, a:hover {
 
 @media (max-width: 768px) {
     .nav-container {
-        width: 90vw;
+        width: 95vw;
         flex-wrap: wrap;
     }
     .nav-left {
@@ -166,6 +166,9 @@ a, a:hover {
         text-align: center;
         margin-top: 1.5rem;
         justify-content: space-around;
+    }
+    .container {
+        width: 90vw;
     }
     .post-list {
         width: 100%;
