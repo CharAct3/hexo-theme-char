@@ -2,7 +2,8 @@
 .post {
     color: var(--first-color);
     line-height: 1.7;
-    font-weight: 400;
+    font-weight: 300;
+    word-wrap: break-word;
 }
 
 .subtitle {
@@ -38,8 +39,10 @@
 }
 
 .post p {
-    margin-bottom: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
     font-size: 1rem;
+    letter-spacing: 0.05rem;
 }
 
 .post code {

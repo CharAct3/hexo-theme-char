@@ -2,11 +2,11 @@
     /*--highlight-color: #A94442;*/
     --link-color: #7422a9;
     --highlight-color: #7422a9;
-    --normal-font: "Helvetica Neue",Tahoma,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    --normal-font: "Helvetica",Tahoma,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
     --mono-font: Menlo,Monaco,Consolas,"Courier New",monospace;
     font-family: var(--normal-font);
 
-    --first-color: #3e3e3e;
+    --first-color: #2e2e2e;
     --second-color: #808080;
     --third-color: #929292;
 }
