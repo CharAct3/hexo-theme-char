@@ -5,11 +5,14 @@
             <span>
                 ⏱<%= post.date.format(config.date_format) %>
             </span>
-            <span style="padding-left: 1rem">
+
+            <% if (post.tags !== undefined) { %>
+                <span>
                 🔖<% post.tags.forEach(function (tag) { %>
-                    <a class="post-tag" href="<%= config.root %><%= tag.path %>"><%= tag.name %></a>
-                <% })%>
-            </span>
+                        <a class="post-tag" href="<%= config.root %><%= tag.path %>"><%= tag.name %></a>
+                    <% })%>
+                </span>
+            <% } %>
         </p>
     </h1>
     <%- post.content %>

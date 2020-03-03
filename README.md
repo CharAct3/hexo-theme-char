@@ -16,11 +16,25 @@
   <a href="https://github.com/CharAct3/hexo-theme-char/issues">Issues</a>
 </p>
 
-## Config
-
 ## Document
 
 ### Create about page
+```bash
+$ hexo new page about
+```
+
+Edit `_config.yml`:
+```yml
+menu:
+  About: /about
+```
+
+### Site Analytics
+```yml
+google_analytics: your-analytics-id
+baidu_analytics: your-analytics-id
+busuanzi: yes
+```
 
 ### Social links
 ```yml
